@@ -45,5 +45,11 @@ const checker = TD1Checker(mrz, false)
 checker.check()
 ``````
 
+TODO:
+
+* [ ] Add Tests
+* [ ] Better Refactoring
+* [ ] Better Characters Normalization
+
 ---
 Thanks to [Arg0s1080](https://github.com/Arg0s1080) for the comprehension about MRZ

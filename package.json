@@ -7,6 +7,13 @@
   "scripts": {
     "doc": "tsc src/**/*.js --declaration --allowJs --emitDeclarationOnly --outDir types"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KevenGoncalves/mrzilian.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KevenGoncalves/mrzilian.js/issues"
+  },
   "keywords": [
     "mrz",
     "generator",

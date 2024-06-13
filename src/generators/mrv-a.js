@@ -1,6 +1,5 @@
 import { Common } from "./common.js";
 import { StringHelper } from "../services/string-helper.js";
-import { MRVADocument } from "../documents/mrv-a.js";
 
 class MRVAGenerator {
   /**
@@ -23,7 +22,7 @@ class MRVAGenerator {
 
   /**
    * @private
-   * @type {MRVADocument}
+   * @type {import("../documents/mrv-a.js").MRVADocument}
    */
   _document;
 
@@ -43,7 +42,7 @@ class MRVAGenerator {
 
   /**
    * @public
-   * @param {MRVADocument} document
+   * @param {import("../documents/mrv-a.js").MRVADocument} document
    */
   constructor(document) {
     this._document = document;

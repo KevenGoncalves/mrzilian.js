@@ -1,7 +1,6 @@
 import { Common } from "./common.js";
 import { StringHelper } from "../services/string-helper.js";
 import { Check } from "../services/check-digit.js";
-import { TD3Document } from "../documents/td3.js";
 
 class TD3Generator {
   /**
@@ -30,7 +29,7 @@ class TD3Generator {
 
   /**
    * @private
-   * @type {TD3Document}
+   * @type {import("../documents/td3.js").TD3Document}
    */
   _document;
 
@@ -50,7 +49,7 @@ class TD3Generator {
 
   /**
    * @public
-   * @param {TD3Document} document
+   * @param {import("../documents/td3.js").TD3Document} document
    */
   constructor(document) {
     this._document = document;

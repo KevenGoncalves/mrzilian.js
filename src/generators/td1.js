@@ -1,6 +1,5 @@
 import { Common } from "./common.js";
 import { StringHelper } from "../services/string-helper.js";
-import { TD1Document } from "../documents/td1.js";
 
 class TD1Generator {
   /**
@@ -23,7 +22,7 @@ class TD1Generator {
 
   /**
    * @private
-   * @type {TD1Document}
+   * @type {import("../documents/td1.js").TD1Document}
    */
   _document;
 
@@ -50,7 +49,7 @@ class TD1Generator {
 
   /**
    * @public
-   * @param {TD1Document} document
+   * @param {import("../documents/td1.js").TD1Document} document
    */
   constructor(document) {
     this._document = document;

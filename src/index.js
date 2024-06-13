@@ -1,20 +1,20 @@
-import { TD1Generator } from "./src/generators/td1.js";
-import { TD2Generator } from "./src/generators/td2.js";
-import { TD3Generator } from "./src/generators/td3.js";
-import { MRVAGenerator } from "./src/generators/mrv-a.js";
-import { MRVBGenerator } from "./src/generators/mrv-b.js";
+import { TD1Generator } from "./generators/td1.js";
+import { TD2Generator } from "./generators/td2.js";
+import { TD3Generator } from "./generators/td3.js";
+import { MRVAGenerator } from "./generators/mrv-a.js";
+import { MRVBGenerator } from "./generators/mrv-b.js";
 
-import { TD1Document } from "./src/documents/td1.js";
-import { TD2Document } from "./src/documents/td2.js";
-import { TD3Document } from "./src/documents/td3.js";
-import { MRVADocument } from "./src/documents/mrv-a.js";
-import { MRVBDocument } from "./src/documents/mrv-b.js";
+import { TD1Document } from "./documents/td1.js";
+import { TD2Document } from "./documents/td2.js";
+import { TD3Document } from "./documents/td3.js";
+import { MRVADocument } from "./documents/mrv-a.js";
+import { MRVBDocument } from "./documents/mrv-b.js";
 
-import { TD1Checker } from "./src/checkers/td1.js";
-import { TD2Checker } from "./src/checkers/td2.js";
-import { TD3Checker } from "./src/checkers/td3.js";
-import { MRVAChecker } from "./src/checkers/mrv-a.js";
-import { MRVBChecker } from "./src/checkers/mrv-b.js";
+import { TD1Checker } from "./checkers/td1.js";
+import { TD2Checker } from "./checkers/td2.js";
+import { TD3Checker } from "./checkers/td3.js";
+import { MRVAChecker } from "./checkers/mrv-a.js";
+import { MRVBChecker } from "./checkers/mrv-b.js";
 
 export {
   TD1Generator,

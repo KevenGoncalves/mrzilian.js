@@ -1,6 +1,6 @@
 {
   "name": "mrzilian.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a simple lib to generate and check mrz without dependencies",
   "main": "index.js",
   "type": "module",

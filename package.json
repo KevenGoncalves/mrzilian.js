@@ -1,11 +1,11 @@
 {
   "name": "mrzilian.js",
   "version": "1.0.0",
-  "description": "",
+  "description": "a simple lib to generate and check mrz without dependencies",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "doc": "tsc src/**/*.js --declaration --allowJs --emitDeclarationOnly --outDir types"
   },
   "keywords": [
     "mrz",

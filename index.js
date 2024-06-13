@@ -33,20 +33,3 @@ export {
   MRVAChecker,
   MRVBChecker,
 };
-
-const document = new TD1Document(
-  "ID",
-  "MOZ",
-  "50012",
-  "M",
-  "Keven José Manuel",
-  "Gonçalves",
-  "24/04/2002",
-  "31/05/2027",
-  "MOZ",
-  "DA",
-  "12"
-);
-
-const generator = new TD1Generator(document);
-console.log(generator);

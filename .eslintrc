@@ -1,5 +1,5 @@
 {
-  "ignorePatterns": ["node_modules/", "dist/", "build/", "types"],
+  "ignorePatterns": ["node_modules/", "dist/", "build/", "types/"],
   "env": {
     "browser": true,
     "commonjs": true,

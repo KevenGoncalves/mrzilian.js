@@ -30,16 +30,12 @@ class Common {
    */
   generateDateWithCheckDigit(line, stringDate, position) {
     const format = this._dateHelper.convertDateFormat(stringDate);
-    line = this._stringHelper.replaceSubStringAtPositionToUpperCase(
-      line,
-      format,
-      position,
-    );
+    line = this._stringHelper.replaceSubStringAtPositionToUpperCase(line, format, position);
     const checkDigit = this._checkDigit.checkDigit(format);
     line = this._stringHelper.replaceSubStringAtPositionToUpperCase(
       line,
       checkDigit.toString(),
-      position + 6,
+      position + 6
     );
     return line;
   }
@@ -52,16 +48,12 @@ class Common {
    * @return {string}
    */
   generateDocumentNumber(line, documentNumber, position) {
-    line = this._stringHelper.replaceSubStringAtPositionToUpperCase(
-      line,
-      documentNumber,
-      position,
-    );
+    line = this._stringHelper.replaceSubStringAtPositionToUpperCase(line, documentNumber, position);
     const checkDigit = this._checkDigit.checkDigit(documentNumber);
     line = this._stringHelper.replaceSubStringAtPositionToUpperCase(
       line,
       checkDigit.toString().toUpperCase(),
-      position + 9,
+      position + 9
     );
 
     return line;
@@ -74,11 +66,7 @@ class Common {
    * @return {string}
    */
   generateDocumentType(line, type) {
-    line = this._stringHelper.replaceSubStringAtPositionToUpperCase(
-      line,
-      type,
-      0,
-    );
+    line = this._stringHelper.replaceSubStringAtPositionToUpperCase(line, type, 0);
     return line;
   }
 
@@ -90,11 +78,7 @@ class Common {
    * @return {string}
    */
   generateCountryCode(line, country, position) {
-    line = this._stringHelper.replaceSubStringAtPositionToUpperCase(
-      line,
-      country,
-      position,
-    );
+    line = this._stringHelper.replaceSubStringAtPositionToUpperCase(line, country, position);
     return line;
   }
 
@@ -109,7 +93,7 @@ class Common {
     line = this._stringHelper.replaceSubStringAtPositionToUpperCase(
       line,
       sex[0].toUpperCase(),
-      position,
+      position
     );
 
     return line;
@@ -124,33 +108,22 @@ class Common {
    * @param {number} lineLength
    * @return {string}
    */
-  generateSurnameAndGivenNames(
-    line,
-    givenNames,
-    surname,
-    position,
-    lineLength,
-  ) {
+  generateSurnameAndGivenNames(line, givenNames, surname, position, lineLength) {
     const last = this._stringHelper.replaceSpecialChars(surname);
-    line = this._stringHelper.replaceSubStringAtPositionToUpperCase(
-      line,
-      last,
-      position,
-    );
+    line = this._stringHelper.replaceSubStringAtPositionToUpperCase(line, last, position);
 
     const giveNamesPosition = position + surname.length + 2;
     const givenNamesMaxLength = lineLength - giveNamesPosition;
-    const givenNamesReplaced =
-      this._stringHelper.replaceSpecialChars(givenNames);
+    const givenNamesReplaced = this._stringHelper.replaceSpecialChars(givenNames);
     const givenNamesFinal = this._stringHelper.truncateString(
       givenNamesReplaced,
-      givenNamesMaxLength,
+      givenNamesMaxLength
     );
 
     line = this._stringHelper.replaceSubStringAtPositionToUpperCase(
       line,
       givenNamesFinal,
-      giveNamesPosition,
+      giveNamesPosition
     );
 
     return line;
@@ -165,24 +138,13 @@ class Common {
    * @return {string}
    */
   generateOptionalData(line, optionalData, position, maxLength) {
-    if (
-      optionalData == undefined ||
-      optionalData == "" ||
-      optionalData == null
-    ) {
+    if (optionalData == undefined || optionalData == "" || optionalData == null) {
       optionalData = "<".repeat(maxLength);
     }
 
-    let field = this._stringHelper.truncateString(
-      optionalData.toUpperCase(),
-      maxLength,
-    );
+    let field = this._stringHelper.truncateString(optionalData.toUpperCase(), maxLength);
     field = this._stringHelper.replaceSpecialChars(field);
-    line = this._stringHelper.replaceSubStringAtPositionToUpperCase(
-      line,
-      field,
-      position,
-    );
+    line = this._stringHelper.replaceSubStringAtPositionToUpperCase(line, field, position);
     return line;
   }
 
@@ -208,17 +170,15 @@ class Common {
     optionalData1Length,
     optionalData2,
     optionalData2Length,
-    position,
+    position
   ) {
     const documentNumberFormat = documentNumber.padEnd(9, "0");
     const documentNumberHash = this._checkDigit.checkDigit(documentNumber);
     const optionalData1Format = optionalData1.padEnd(optionalData1Length, "0");
     const birthDateFormat = this._dateHelper.convertDateFormat(birthDate);
     const birthDateHash = this._checkDigit.checkDigit(birthDateFormat);
-    const expirationDateFormat =
-      this._dateHelper.convertDateFormat(expirationDate);
-    const expirationDateHash =
-      this._checkDigit.checkDigit(expirationDateFormat);
+    const expirationDateFormat = this._dateHelper.convertDateFormat(expirationDate);
+    const expirationDateHash = this._checkDigit.checkDigit(expirationDateFormat);
     const optionalData2Format = optionalData2.padEnd(optionalData2Length, "0");
 
     const format =
@@ -236,7 +196,7 @@ class Common {
     line = this._stringHelper.replaceSubStringAtPositionToUpperCase(
       line,
       checkDigit.toString(),
-      position,
+      position
     );
 
     return line;

@@ -103,7 +103,7 @@ class TD3Document {
     birthDate,
     expirationDate,
     nationality,
-    optionalData1,
+    optionalData1
   ) {
     this.docType = docType;
     this.country = country;

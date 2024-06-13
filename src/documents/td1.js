@@ -114,7 +114,7 @@ class TD1Document {
     expirationDate,
     nationality,
     optionalData1,
-    optionalData2,
+    optionalData2
   ) {
     this.docType = docType;
     this.country = country;

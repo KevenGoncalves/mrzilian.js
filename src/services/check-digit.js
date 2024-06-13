@@ -61,7 +61,7 @@ class Check {
    */
   _convertArrayOfCharsToNumber(array) {
     return array.map((char) =>
-      this._isCharNumber(char) ? Number(char) : this._convertCharToNumber(char),
+      this._isCharNumber(char) ? Number(char) : this._convertCharToNumber(char)
     );
   }
 

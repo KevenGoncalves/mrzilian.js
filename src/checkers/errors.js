@@ -34,9 +34,7 @@ class ErrorMRZ {
     const valid = /^[A-Z0-9<]{0,9}$/.test(formated);
 
     if (!valid) {
-      throw new Error(
-        "Invalid Document Number (Must contain only A-Z and 0-9) : " + formated,
-      );
+      throw new Error("Invalid Document Number (Must contain only A-Z and 0-9): " + formated);
     }
   }
 
@@ -88,7 +86,7 @@ class ErrorMRZ {
     const valid = /^[A-Z0-9<]+$/.test(formated);
 
     if (!valid) {
-      throw new Error("Invalid Alpha Numeric : " + formated);
+      throw new Error("Invalid Alpha Numeric: " + formated);
     }
   }
 
@@ -112,9 +110,7 @@ class ErrorMRZ {
     const infoDigit = check.checkDigit(info);
 
     if (Number(checkDigit) !== infoDigit) {
-      throw new Error(
-        "Invalid Check Digit : " + checkDigit + " generated " + infoDigit,
-      );
+      throw new Error("Invalid Check Digit: " + checkDigit + " generated " + infoDigit);
     }
   }
 }

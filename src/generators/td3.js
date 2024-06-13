@@ -67,6 +67,7 @@ class TD3Generator {
    */
   _generateLine1() {
     let line = this._stringHelper.generateEmptyLine(this._lineLength);
+
     line = this._common.generateDocumentType(line, this._document.docType, 0);
     line = this._common.generateCountryCode(line, this._document.country, 2);
     line = this._common.generateSurnameAndGivenNames(
@@ -74,7 +75,7 @@ class TD3Generator {
       this._document.givenNames,
       this._document.surname,
       5,
-      this._lineLength,
+      this._lineLength
     );
 
     return line;
@@ -86,41 +87,22 @@ class TD3Generator {
    */
   _generateLine2() {
     let line = this._stringHelper.generateEmptyLine(this._lineLength);
-    line = this._common.generateDocumentNumber(
-      line,
-      this._document.documentNumber,
-      0,
-    );
 
-    line = this._common.generateCountryCode(
-      line,
-      this._document.nationality,
-      10,
-    );
-
-    line = this._common.generateDateWithCheckDigit(
-      line,
-      this._document.birthDate,
-      13,
-    );
-
+    line = this._common.generateDocumentNumber(line, this._document.documentNumber, 0);
+    line = this._common.generateCountryCode(line, this._document.nationality, 10);
+    line = this._common.generateDateWithCheckDigit(line, this._document.birthDate, 13);
     line = this._common.generateSex(line, this._document.sex, 20);
-
-    line = this._common.generateDateWithCheckDigit(
-      line,
-      this._document.expirationDate,
-      21,
-    );
+    line = this._common.generateDateWithCheckDigit(line, this._document.expirationDate, 21);
 
     const optionalDataCheckDigit = this._check.checkDigit(
-      this._document.optionalData1.padEnd(14, "0"),
+      this._document.optionalData1.padEnd(14, "0")
     );
 
     line = this._common.generateOptionalData(
       line,
       this._document.optionalData1.padEnd(14, "<") + optionalDataCheckDigit,
       28,
-      15,
+      15
     );
 
     line = this._common.generateFinalCheckDigit(
@@ -132,7 +114,7 @@ class TD3Generator {
       0,
       this._document.optionalData1.padEnd(14, "0") + optionalDataCheckDigit,
       15,
-      43,
+      43
     );
 
     return line;

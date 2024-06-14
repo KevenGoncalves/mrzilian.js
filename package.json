@@ -3,6 +3,8 @@
   "version": "1.0.12",
   "description": "a simple lib to generate and check mrz without dependencies",
   "type": "module",
+  "main": "./dist/lib/index.js",
+  "types": "./dist/types/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "ts-node ./src/index.ts"

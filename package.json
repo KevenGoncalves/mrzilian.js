@@ -1,10 +1,14 @@
 {
   "name": "mrzilian.js",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "a simple lib to generate and check mrz without dependencies",
-  "main": "./src/index.js",
-  "types": "./dist/index.d.ts",
   "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-node ./src/index.ts"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/KevenGoncalves/mrzilian.js.git"
@@ -21,7 +25,11 @@
   "author": "Keven Gonçalves",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.4.0",
+    "@types/eslint__js": "^8.42.3",
+    "eslint": "^9.4.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.13.0"
   }
 }

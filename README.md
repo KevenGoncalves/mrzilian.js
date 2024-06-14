@@ -50,6 +50,7 @@ TODO:
 * [ ] Add Tests
 * [ ] Better Refactoring
 * [ ] Better Characters Normalization
+* [ ] Better Documentation
 
 ---
 Thanks to [Arg0s1080](https://github.com/Arg0s1080) for the comprehension about MRZ

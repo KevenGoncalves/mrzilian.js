@@ -1,6 +1,6 @@
 {
   "name": "mrzilian.js",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "a simple lib to generate and check mrz without dependencies",
   "main": "./src/index.js",
   "types": "./dist/index.d.ts",
@@ -21,10 +21,7 @@
   "author": "Keven Gonçalves",
   "license": "ISC",
   "devDependencies": {
-    "grunt": "^1.6.1",
-    "grunt-contrib-jshint": "^3.2.0",
-    "grunt-contrib-nodeunit": "^5.0.0",
-    "grunt-contrib-uglify": "^5.2.2",
+    "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   }
 }

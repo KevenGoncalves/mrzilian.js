@@ -1,6 +1,6 @@
-import { TD2Document } from "../documents/td2";
-import { StringHelper } from "../services/string-helper";
-import { Common } from "./common";
+import { TD2Document } from "../documents/td2.js";
+import { StringHelper } from "../services/string-helper.js";
+import { Common } from "./common.js";
 
 export class TD2Generator {
   private lineLength = 36;

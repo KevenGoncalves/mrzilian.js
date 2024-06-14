@@ -1,6 +1,6 @@
-import { Check } from "../services/check-digit";
-import { DateHelper } from "../services/date-helper";
-import { StringHelper } from "../services/string-helper";
+import { Check } from "../services/check-digit.js";
+import { DateHelper } from "../services/date-helper.js";
+import { StringHelper } from "../services/string-helper.js";
 
 export class Common {
   private stringHelper = new StringHelper();

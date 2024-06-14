@@ -1,7 +1,7 @@
-import { TD3Document } from "../documents/td3";
-import { Check } from "../services/check-digit";
-import { StringHelper } from "../services/string-helper";
-import { Common } from "./common";
+import { TD3Document } from "../documents/td3.js";
+import { Check } from "../services/check-digit.js";
+import { StringHelper } from "../services/string-helper.js";
+import { Common } from "./common.js";
 
 export class TD3Generator {
   private lineLength = 44;

@@ -1,6 +1,6 @@
-import { TD1Document } from "../documents/td1";
-import { StringHelper } from "../services/string-helper";
-import { Common } from "./common";
+import { TD1Document } from "../documents/td1.js";
+import { StringHelper } from "../services/string-helper.js";
+import { Common } from "./common.js";
 
 export class TD1Generator {
   private lineLength = 30;

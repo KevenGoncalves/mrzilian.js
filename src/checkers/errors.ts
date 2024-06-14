@@ -1,6 +1,6 @@
-import { Check } from "../services/check-digit";
-import { DateHelper } from "../services/date-helper";
-import { countryCodes } from "./data/country-codes";
+import { Check } from "../services/check-digit.js";
+import { DateHelper } from "../services/date-helper.js";
+import { countryCodes } from "./data/country-codes.js";
 
 export class ErrorMRZ {
   isDocTypeValid(docType: string) {

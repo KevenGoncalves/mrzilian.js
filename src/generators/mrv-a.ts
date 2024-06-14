@@ -1,6 +1,6 @@
-import { MRVADocument } from "../documents/mrv-a";
-import { StringHelper } from "../services/string-helper";
-import { Common } from "./common";
+import { MRVADocument } from "../documents/mrv-a.js";
+import { StringHelper } from "../services/string-helper.js";
+import { Common } from "./common.js";
 
 export class MRVAGenerator {
   private lineLength = 44;

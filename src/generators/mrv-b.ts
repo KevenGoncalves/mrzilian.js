@@ -1,6 +1,6 @@
-import { MRVBDocument } from "../documents/mrv-b";
-import { StringHelper } from "../services/string-helper";
-import { Common } from "./common";
+import { MRVBDocument } from "../documents/mrv-b.js";
+import { StringHelper } from "../services/string-helper.js";
+import { Common } from "./common.js";
 
 export class MRVBGenerator {
   private lineLength = 36;

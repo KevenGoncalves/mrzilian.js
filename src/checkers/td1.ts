@@ -1,4 +1,4 @@
-import { ErrorMRZ } from "./errors";
+import { ErrorMRZ } from "./errors.js";
 
 export class TD1Checker {
   mrzString: string;
